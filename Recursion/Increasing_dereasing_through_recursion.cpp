@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+void print(int x)
+{
+	if(x==0) return;
+	cout<<x<<endl;
+	print(x-1);
+	cout<<x<<endl;
+	return;
+}
+int main()
+{
+	int x;
+	cout<<"Enter a Number : ";cin>>x;
+	print(x);
+	
+	
+return 0;
+}
